@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popup with blurred background Using CSS3 And Vanilla Javascript | Modal</title>
+</head>
+
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque voluptatem ducimus quasi. Neque
+                cum assumenda soluta mollitia recusandae dolorem.</h2>
+            <img src="b.png">
+            <a href="#" onclick="toggle()">Leer más</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, doloremque!</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores quod similique dolor rerum excepturi?
+            Odit, pariatur deserunt incidunt accusantium hic molestias sapiente? Dolor itaque omnis cum ratione ipsum
+            sit dignissimos tempora, facilis doloribus quos ullam ut sapiente possimus tenetur et quia neque voluptatum
+            facere laboriosam blanditiis aspernatur enim. Dignissimos, id?</p>
+        <a href="#" onclick="toggle()">Cerrar</a>
+    </div>
+
+    <script>
+        function toggle() {
+            let blur = document.getElementById('blur');
+            blur.classList.toggle('active');
+            let popup = document.getElementById('popup');
+            popup.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
