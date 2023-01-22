@@ -71,3 +71,34 @@ a {
   opacity: 1;
   transition: 0.5s;
 }
+
+@media screen and (max-width: 655px) {
+  #popup {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #popup {
+    padding: 20px;
+  }
+
+  #popup h2 {
+    font-size: 1.25rem;
+  }
+
+  #popup p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #popup h2 {
+    font-size: 1rem;
+  }
+
+  #popup p {
+    font-size: 0.75rem;
+  }
+}
